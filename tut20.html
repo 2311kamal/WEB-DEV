@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        body{
+            background-color: rgb(255, 216, 216);
+        }
+        .container {
+            background-color: rgb(185, 240, 222);
+            border: 3px solid rgb(0, 255, 221);
+            /* margin:35px; 
+             padding:30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px; 
+            padding: 20px 40px 50px 20px;
+            TOP RIGHT BOTTOM LEFT*/
+
+            padding: 50px 50px;
+
+            /*  y(TOP/BOTTOM) x(LEFT/RIGHT)  
+            
+            same can be fone with margin */
+            margin: 10px 20px 15px 25px ;
+            /*TOP RIGHT BOTTOM LEFT*/
+            border-radius: 20px;
+            width:1000px;
+            box-sizing:border-box;  /* Auto adjust width even after padding  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>BOX MODEL</h3>
+        <p>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur incidunt molestias
+            expedita obcaecati enim cupiditate laborum quasi dolorum magnam.</p>
+        </p>
+    </div>
+
+    <div class="container">
+        <h3>Lorem ipsum dolor sit amet.
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ullam ut. Delectus earum minima iusto quos
+            magni itaque ullam deleniti.</p>
+    </div>
+    <div class="container">
+        <h3>Lorem ipsum dolor sit amet.
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ullam ut. Delectus earum minima iusto quos
+            magni itaque ullam deleniti.</p>
+    </div>
+
+</body>
+
+</html>
