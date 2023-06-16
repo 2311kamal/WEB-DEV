@@ -1,1 +1,5 @@
 A REPOSITORY CREATED TO LEARN WEB DEV FROM SCRATCH AS WELL AS TO PRACTICE GIT AND GIT HUB
+
+I AM LEARNING WEB DEV FROM YOUTUBE @codewithharry with his playlist of 103 videos
+
+I LEARNED git AND github FROM codewithharry's SINGLE VIDEO TOO AND TAKING REFERENCES FROM stackoverflow AND other githib reporitories  
