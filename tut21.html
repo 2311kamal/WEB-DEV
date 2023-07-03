@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ALIGNMENT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Kalam';
+        }
+
+        .container {
+            /* box-sizing: border-box; */
+            width: 1000px;
+            border: 2px solid purple;
+            /*left right equal margin in x and 33px in y*/
+            margin: 33px auto;
+            background-color: rgb(254, 255, 213);
+
+        }
+
+        .item {
+            border: 2px solid gray;
+            margin: 10px 10px;
+            padding: 10px 10px;
+            background: rgb(243, 251, 255);
+        }
+
+
+
+        #FRUITS {
+            float: left;
+            width: 47%;
+        }
+
+        #VEGETABLES {
+            float: right;
+            width: 47%;
+        }
+
+        #STATIONARY {
+            /* float: left; */
+            /* width: 100%; */
+            /* clear:left; */
+            clear: both;
+        }
+
+        p,
+        h3 {
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+        }
+
+        h2 {
+            margin: 20px auto;
+            width: fit-content;
+            
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+
+        <h2>WELCOME</h2>
+        <div id="FRUITS" class="item">
+            <h3>FRUITS</h3>
+            <p id="FRUITS Para" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit assumenda
+                nesciunt, inventore est provident corrupti dolorum eaque ratione impedit eius!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iusto, corporis neque reiciendis recusandae
+                dolorum quibusdam est amet. Unde error repellendus minus nihil ipsa atque harum porro debitis explicabo
+                neque?</p>
+        </div>
+        <div id="VEGETABLES" class="item">
+            <h3>VEGETABLES</h3>
+            <p id="VEGETABLES Para" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit assumenda
+                nesciunt, inventore est provident corrupti dolorum eaque ratione impedit eius!
+                Lorem ipsum dolor sit amet consectetur adipisicenderitit eius! Lorem ipsum dolor sit amet coet
+                consectetur adipisicing elit. Imem ipsum . Repellendus eaque amet itaque provident ex maxime. Debitis
+                iusto culpa deleniti ipsum, sed, vel earum optio doloribus voluptas harum non est iure?</p>
+        </div>
+        <div id="STATIONARY" class="item">
+            <h3>STATIONARY</h3>
+            <p id="STATIONARY Para" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit assumenda
+                nesciunt, inventore est provident corrupti dolorum eaque ratione impeditit eius! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Impedit, reprehenderitit eius! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Impedit, dolor sit amet consectetur adipisicing elit. Impedit, reprehenderitv eius!
+            </p>
+        </div>
+        <div id="GLASSES" class="item">
+            <h3>GLASSES</h3>
+            <p id="GLASSES Para" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit assumenda
+                nesciunt, inventore est provident corrupti dolorum eaque ratione impeditit eius! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Impedit, reprehenderitit eius! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Impedit, dolor sit amet consectetur adipisicing elit. Impedit, reprehenderitv eius!
+            </p>
+        </div>
+
+
+    </div>
 </body>
+
 </html>
