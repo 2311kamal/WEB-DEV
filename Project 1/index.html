@@ -60,7 +60,22 @@
             height: auto;
         }
         #myimg{
-            width: 100px;
+            width: 300px;
+            /* border-radius: 100px; */
+            /* background: rgb(188, 242, 255); */
+            position: relative;
+            top: 4px;
+        }
+
+        #mydiv{
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            background-image: url(Images/blackbg.jpeg);
+            background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+            
         }
     </style>
 </head>
@@ -82,7 +97,7 @@
         </nav>
     </header>
 
-    <div><img id="myimg" src="Images/IMG20230413142955-transformed.png" alt=""></div>
+    <div id="mydiv"><img id="myimg" src="Images/IMG20230413142955-transformed.png" alt=""></div>
 
 
 
