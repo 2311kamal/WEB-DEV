@@ -5,77 +5,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&family=Special+Elite&family=Viga&display=swap"
+        rel="stylesheet">
     <style>
-        header {}
-
-        nav {}
-
-
-        ul h2,
-        h5 {
-            display: inline;
-            margin: auto 0px;
-            position: relative;
-            top: 20px;
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Borel', cursive;
         }
 
-        ul h5 {
-            top: 22px;
+        body {
+            background-color: rgb(243, 243, 243);
+            /* scroll-behavior:smooth; */
+            animation-name: myanime;
+            animation-duration: 2s;
+            /* animation-delay: .1s; */
+            animation-iteration-count: 1;
         }
 
-        ul {
-            border-radius: 35px;
-            background-color: rgb(255, 218, 201);
-            overflow: auto;
+        @keyframes myanime {
+            from {
+                filter: opacity(0%);
+                margin-top: 400px;
+            }
+
+            to {
+                filter: opacity(100%);
+                margin: 0px;
+            }
         }
 
-        ul li {
-            display: inline;
-            float: right;
-            margin: 9px 5px;
+
+        nav {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            justify-content: space-between;
+            height: 55px;
+            position: fixed;
+            width: 100vw;
+            box-shadow: 0px 5px 15px rgb(220 220 220 / 50%);
 
         }
 
-      a  img {
-            background-color: white;
+        li a {}
+
+        .right {
+            display: flex;
+            margin-right: 20px;
+            box-shadow: 3px 3px 15px rgb(220 220 220 / 50%), -3px -3px 15px rgb(220 220 220 / 50%);
+
+            width: 200px;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .left {
+            display: flex;
+            align-items: flex-end;
+            margin-left: 20px;
+
+
+        }
+
+        .container h1 {
+            font-size: 70px;
+            /* margin-right: 70px; */
+            height: 100px;
+            margin-left: 10px;
+            /* font-family: 'Signika', sans-serif; */
+            /* font-family: 'Viga', sans-serif; */
+            font-family: 'Special Elite', cursive;
+        }
+
+        .container h3 {
+            width: 450px;
+            margin-left: 10px;
+        }
+
+        div h2 {
+            height: 40px;
+        }
+
+        h4 {
+            height: 30px;
+        }
+
+        .right li {
+            list-style-type: none;
+            text-decoration: none;
+            height: 50px;
+
+        }
+
+        .right img {
+            width: 50px;
             border-radius: 50%;
         }
 
-        #lin {
-            width: 43px;
-            height: auto;
-            margin-top: 1px;
+        :root {
+            --siz: 450px;
+            --circlesize: 150px;
         }
 
-        #leet {
-            width: 44px;
-            height: auto;
-            margin-top: 4px;
-            background-color: transparent;
-
-        }
-
-        #git {
-            width: 43px;
-            height: auto;
-        }
-        #myimg{
-            width: 300px;
-            /* border-radius: 100px; */
-            /* background: rgb(188, 242, 255); */
-            position: relative;
-            top: 4px;
-        }
-
-        #mydiv{
-            display: inline-block;
+        #mydiv::before {
+            content: "";
+            background: url(https://images.unsplash.com/photo-1507608158173-1dcec673a2e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2Zlc3Npb25hbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60) no-repeat center center/cover;
+            position: absolute;
+            width: var(--siz);
+            height: 456.5px;
+            z-index: -1;
+            opacity: .5;
             border-radius: 50%;
-            overflow: hidden;
-            background-image: url(Images/blackbg.jpeg);
-            background-color: #8EC5FC;
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        }
 
-            
+        #mydiv {
+            margin-bottom: 50px;
+        }
+
+
+        #mydiv img {
+            width: var(--siz);
+            border-radius: 50%;
+        }
+
+        .container {
+            padding-top: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 500px;
+            margin-left: 40px
+        }
+
+        .circle {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .circle a {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            border-radius: 45%;
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+
+        }
+
+
+        #circle1 {
+            background-color: rgb(213, 255, 241);
+        }
+
+        #circle2 {
+            background-color: rgba(255, 226, 182, 0.909);
+        }
+
+        #circle3 {
+            background-color: rgb(178, 205, 255);
+        }
+
+        #circle1:hover {
+            /* background-color: transparent; */
+            /* border: 2px solid black; */
+            box-shadow: 3px 3px 15px rgb(220 220 220 / 50%), -3px -3px 15px rgb(220 220 220 / 70%);
+            ;
+
+            width: 170px;
+            height: 170px;
+            margin: 0px;
+        }
+
+        #circle2:hover {
+            /* background-color: transparent; */
+            /* border: 2px solid black; */
+            box-shadow: 3px 3px 15px rgb(220 220 220 / 50%), -3px -3px 15px rgb(220 220 220 / 70%);
+            ;
+            width: 170px;
+            height: 170px;
+            margin: 0px;
+        }
+
+        #circle3:hover {
+            /* border: 2px solid black; */
+            /* background-color: transparent; */
+            box-shadow: 3px 3px 15px rgb(220 220 220 / 50%), -3px -3px 15px rgb(220 220 220 / 70%);
+            ;
+            width: 170px;
+            height: 170px;
+            margin: 0px;
+        }
+
+        .abc {
+            transition: all .5s;
+            font-family: 'Special Elite', cursive;
+            font-size: 25px;
+
         }
     </style>
 </head>
@@ -84,20 +228,42 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     <header>
         <nav class="navbar">
 
-            <ul>
-                <h2>Kamal Garg |</h2>
-                <h5>B.Tech</h5>
+            <div class="left">
+                <h2>Kamal Garg|</h2>
+                <h4>B.Tech</h4>
+            </div>
+
+
+            <ul class="right">
+                <li><a target="_blank" href="https://github.com/2311kamal"><img id="git" src="Images/github.png"></a>
+
                 <li><a target="_blank" href="https://leetcode.com/2311kamalgarg/"><img id="leet"
                             src="Images/LeetCode.png"></a></li>
+
                 <li><a target="_blank" href="https://www.linkedin.com/in/kamal-garg-930962231/"><img id="lin"
                             src="Images/linkedin.png"></a></li>
-                <li><a target="_blank" href="https://github.com/2311kamal"><img id="git" src="Images/github.png"></a>
                 </li>
             </ul>
+
         </nav>
     </header>
 
-    <div id="mydiv"><img id="myimg" src="Images/IMG20230413142955-transformed.png" alt=""></div>
+
+    <div class="container">
+        <div id="mydiv"><img id="myimg" src="Images/IMG20230413142955-transformed.png" alt=""></div>
+
+        <div class="content">
+
+            <h1>HELLO</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ratione quo quia, placeat hic commodi
+                architecto, amet nostrum labore voluptate minima. Nesciunt, quasi!</h3>
+            <div class="circle">
+                <a href="#" class="abc" id="circle1">PROJECTS</a>
+                <a href="#" class="abc" id="circle2">RESUME</a>
+                <a href="#" class="abc" id="circle3">CONTACT</a>
+            </div>
+        </div>
+    </div>
 
 
 
